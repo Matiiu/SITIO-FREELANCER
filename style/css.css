@@ -12,6 +12,15 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     /*Hack para Box Model */
+    scroll-snap-type: y mandatory;
+}
+
+/*Scroll Snap*/
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 *,
@@ -171,6 +180,7 @@ h3 {
 
 }
 
+
 .contenido-hero .ubicacion {
     display: flex;
     align-items: flex-end;
@@ -241,7 +251,7 @@ h3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto 20rem;
-        column-gap: 1rem;        
+        column-gap: 1rem;
     }
 }
 
@@ -276,6 +286,6 @@ h3 {
     border-radius: .5rem;
 }
 
-.footer{
+.footer {
     text-align: center;
 }
